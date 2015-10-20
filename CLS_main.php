@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Banking Main</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    MAIN
-  </body>
-</html>
+<?php
+$subtitle = 'Teller';
+
+include 'VIEW_header.php';
+?>
+<div class="w3-row-padding w3-center w3-margin-top">
+  <div class="w3-half">
+    <div class="w3-card-2 w3-center"><a>User Administration</a></div>  
+  </div>
+  <div class="w3-half">
+    <div class="w3-card-2 w3-center"><a>Account Administration</a></div>  
+  </div>
+</div>
+<?php
+include 'VIEW_footer.php';
