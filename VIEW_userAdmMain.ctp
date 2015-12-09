@@ -40,7 +40,9 @@
             <td><?= $value->modified; ?></td>
             <td>
               <button class="w3-btn w3-yellow" name="editUser" value="<?= $value->id; ?>">Edit</button>
-              <button class="w3-btn w3-red" name="deleteUser" value="<?= $value->id; ?>" >Delete</button>
+              <button class="w3-btn w3-red" name="deleteUser" value="<?= $value->id; ?>" data-name="<?= $value->name; ?>">
+                Delete
+              </button>
             </td>
           </tr>
         <?php endforeach; ?>
@@ -49,4 +51,7 @@
   </form>
   <!--</div>-->
 </div>
+
+<script src="JS_userAdmMain.js"></script>
+
 <?php include 'VIEW_footer.php'; ?>

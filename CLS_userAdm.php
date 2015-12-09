@@ -116,4 +116,4 @@ if ($state) {
   }
 }
 
-include 'VIEW_user_adm_' . ($state ? $state : 'main') . '.ctp';
+include 'VIEW_userAdm' . ucfirst($state ? $state : 'main') . '.ctp';
